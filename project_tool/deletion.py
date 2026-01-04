@@ -13,6 +13,43 @@ from project_tool.responses import (
     success,
 )
 
+
+DELETED_LOG_FILE = os.path.join("data", "deleted_projects.json")
+
+
+def _ensure_deleted_log_exists() -> None:
+    folder = os.path.dirname(DELETED_LOG_FILE)
+    if folder and not os.path.exists(folder):
+        os.makedirs(folder, exist_ok=True)
+
+    if not os.path.exists(DELETED_LOG_FILE):
+        with open(DELETED_LOG_FILE, "w", encoding="utf-8") as f:
+            json.dump([], f, indent=2)
+
+
+def _log_deleted_project(project_id: str) -> None:
+
+# D8: keep a record of deleted projects.
+
+    _ensure_deleted_log_exists()
+
+    with open(DELETED_LOG_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    data.append({"project_id": project_id})
+
+    with open(DELETED_LOG_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+# D5
+# List project IDs
+
+def list_project_ids() -> List[str]:
+    projects, _ = load_projects()
+    return [p.project_id for p in projects]
+
+
 # D1–D7, D9
 # Delete project
 
@@ -42,7 +79,6 @@ def delete_project_by_id(project_id: str, confirm: bool = False):
         return project_not_found(project_id)
 
     save_projects(remaining)
-    # Not yet incorporated _log_deleted_project, somebody elses user story!
-    _log_deleted_project(project_id) 
+    _log_deleted_project(project_id)
 
     return project_deleted(project_id)
