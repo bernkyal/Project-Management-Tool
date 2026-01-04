@@ -104,3 +104,20 @@ def update_project_deadline(project_id: str, deadline: str):
     save_projects(projects)
 
     return project_updated(project_id, "deadline")
+
+
+
+
+
+
+# M5, M9
+# Filter projects
+
+def get_active_projects():
+    projects, _ = load_projects()
+    return [p for p in projects if p.status == "Active"]
+
+
+def filter_projects_by_status(status: str):
+    projects, _ = load_projects()
+    return [p for p in projects if p.status == status]
