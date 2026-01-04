@@ -82,3 +82,25 @@ def update_project_title(project_id: str, new_title: str):
     save_projects(projects)
 
     return project_updated(project_id, "title")
+
+# A3, A7, A8
+# Update project deadline
+
+def update_project_deadline(project_id: str, deadline: str):
+    try:
+        parsed = datetime.strptime(deadline, "%Y-%m-%d").date()
+        if parsed < datetime.now().date():
+            return invalid_input("Deadline cannot be in the past.")
+    except ValueError:
+        return invalid_input("Deadline must be in YYYY-MM-DD format.")
+
+    projects, _ = load_projects()
+    project = _find_project(projects, project_id)
+
+    if not project:
+        return project_not_found(project_id)
+
+    project.deadline = deadline
+    save_projects(projects)
+
+    return project_updated(project_id, "deadline")
