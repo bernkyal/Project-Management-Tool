@@ -83,6 +83,22 @@ def update_project_title(project_id: str, new_title: str):
 
     return project_updated(project_id, "title")
 
+# A2
+# Update project description
+
+def update_project_description(project_id: str, description: str):
+    projects, _ = load_projects()
+    project = _find_project(projects, project_id)
+
+    if not project:
+        return project_not_found(project_id)
+
+    project.description = description.strip()
+    save_projects(projects)
+
+    return project_updated(project_id, "description")
+
+
 # A3, A7, A8
 # Update project deadline
 
@@ -106,8 +122,42 @@ def update_project_deadline(project_id: str, deadline: str):
     return project_updated(project_id, "deadline")
 
 
+# A4, A9, M6, M7, M8
+# Update project status
+
+VALID_STATUSES = {"Planning", "Active", "On Hold", "Completed", "Archived"}
 
 
+def update_project_status(project_id: str, new_status: str):
+    if new_status not in VALID_STATUSES:
+        return invalid_input(f"Status must be one of: {', '.join(VALID_STATUSES)}")
+
+    projects, _ = load_projects()
+    project = _find_project(projects, project_id)
+
+    if not project:
+        return project_not_found(project_id)
+
+    project.record_status_change(new_status)
+    save_projects(projects)
+
+    return project_updated(project_id, "status")
+
+
+# A5
+# Update team members
+
+def update_project_team_members(project_id: str, members: List[str]):
+    projects, _ = load_projects()
+    project = _find_project(projects, project_id)
+
+    if not project:
+        return project_not_found(project_id)
+
+    project.team_members = list(members)
+    save_projects(projects)
+
+    return project_updated(project_id, "team members")
 
 
 # M5, M9
