@@ -247,7 +247,6 @@ def main() -> None:
 
 
 
-    else:
-        print("Invalid option.")
-
-        input("\nPress Enter to continue...")
+        else:
+            print("Invalid option.")
+            input("\nPress Enter to continue...")
