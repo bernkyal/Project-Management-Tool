@@ -167,7 +167,7 @@ def get_active_projects():
     projects, _ = load_projects()
     return [p for p in projects if p.status == "Active"]
 
-
+#
 
 def filter_projects_by_status(status: str):
     projects, _ = load_projects()
