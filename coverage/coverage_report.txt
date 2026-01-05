@@ -1,0 +1,101 @@
+Name                                                                                          
+                                 Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ \__init__.py                                          
+                                     0      0   100%
+ \__init__.py                                 
+                                     0      0   100%
+ \aoa67\__init__.py                           
+                                     0      0   100%
+ \aoa67\tests\__init__.py                     
+                                     0      0   100%
+ \aoa67\tests\blackbox\__init__.py            
+                                     0      0   100%
+ \aoa67\tests\blackbox\boundary_value_analysis\__init__.py                         0      0   100%
+ \aoa67\tests\blackbox\boundary_value_analysis\test_core_blackbox.py              31      0   100%
+ \aoa67\tests\blackbox\equivalence_partitioning\__init__.py                        0      0   100%
+ \aoa67\tests\blackbox\equivalence_partitioning\test_app_blackbox.py              25      0   100%
+ \aoa67\tests\blackbox\equivalence_partitioning\test_core_blackbox.py             77      0   100%
+ \aoa67\tests\whitebox\__init__.py            
+                                     0      0   100%
+ \aoa67\tests\whitebox\branch_coverage\__init__.py                                 0      0   100%
+ \aoa67\tests\whitebox\branch_coverage\test_app_whitebox.py                       60      4    93%   6-9
+ \aoa67\tests\whitebox\statement_coverage\__init__.py                              0      0   100%
+ \aoa67\tests\whitebox\statement_coverage\test_core_whitebox.py                   29      0   100%
+ \bk191\__init__.py                           
+                                     0      0   100%
+ \bk191\tests\__init__.py                     
+                                     0      0   100%
+ \bk191\tests\blackbox\__init__.py            
+                                     0      0   100%
+ \bk191\tests\blackbox\category_partition\__init__.py                              0      0   100%
+ \bk191\tests\blackbox\category_partition\test_persistence_blackbox.py            55      0   100%
+ \bk191\tests\blackbox\equivalence_partitioning\__init__.py                        0      0   100%
+ \bk191\tests\blackbox\equivalence_partitioning\test_app_blackbox.py              26      2    92%   12-13
+ \bk191\tests\blackbox\equivalence_partitioning\test_persistence_blackbox.py      83      0   100%
+ \bk191\tests\whitebox\__init__.py            
+                                     0      0   100%
+ \bk191\tests\whitebox\branch_coverage\__init__.py                                 0      0   100%
+ \bk191\tests\whitebox\branch_coverage\test_core_whitebox.py                      53      3    94%   18, 26-27
+ \da320\__init__.py                           
+                                     0      0   100%
+ \da320\tests\__init__.py                     
+                                     0      0   100%
+ \da320\tests\blackbox\__init__.py            
+                                     0      0   100%
+ \da320\tests\blackbox\category_partitioning\__init__.py                           0      0   100%
+ \da320\tests\blackbox\category_partitioning\test_deletion_blackbox.py            39      0   100%
+ \da320\tests\blackbox\equivalent_partitioning\__init__.py                         0      0   100%
+ \da320\tests\blackbox\equivalent_partitioning\test_app_blackbox.py               38      4    89%   6-9
+ \da320\tests\blackbox\equivalent_partitioning\test_deletion_blackbox.py          54      0   100%
+ \da320\tests\whitebox\__init__.py            
+                                     0      0   100%
+ \da320\tests\whitebox\branch_testing\__init__.py                                  0      0   100%
+ \da320\tests\whitebox\branch_testing\test_app_whitebox.py                        18      6    67%   6-9, 12-13
+ \da320\tests\whitebox\loop_testing\__init__.py                                    0      0   100%
+ \da320\tests\whitebox\loop_testing\test_deletion_whitebox.py                     32      0   100%
+ \mr449\__init__.py                           
+                                     0      0   100%
+ \mr449\tests\__init__.py                     
+                                     0      0   100%
+ \mr449\tests\blackbox\__init__.py            
+                                     0      0   100%
+ \mr449\tests\blackbox\category_partitioning\__init__.py                           0      0   100%
+ \mr449\tests\blackbox\category_partitioning\test_app_blackbox.py                 28      4    86%   6-9
+ \mr449\tests\blackbox\category_partitioning\test_core_blackbox.py                32      2    94%   24-25
+ \mr449\tests\blackbox\category_partitioning\test_models_blackbox.py              19      0   100%
+ \mr449\tests\blackbox\equivalent_partitioning\__init__.py                         0      0   100%
+ \mr449\tests\blackbox\equivalent_partitioning\test_app_blackbox.py               39      0   100%
+ \mr449\tests\blackbox\equivalent_partitioning\test_core_blackbox.py              41      1    98%   16
+ \mr449\tests\blackbox\equivalent_partitioning\test_models_blackbox.py            21      0   100%
+ \mr449\tests\blackbox\equivalent_partitioning\test_responses_blackbox.py         47      0   100%
+ \mr449\tests\whitebox\__init__.py            
+                                     0      0   100%
+ \mr449\tests\whitebox\branch_testing\__init__.py                                  0      0   100%
+ \mr449\tests\whitebox\branch_testing\test_app_whitebox.py                        25      8    68%   6-9, 12-13, 27-28
+ \mr449\tests\whitebox\branch_testing\test_core_whitebox.py                       26      3    88%   16, 24-25
+ \mr449\tests\whitebox\condition_coverage\__init__.py                              0      0   100%
+ \mr449\tests\whitebox\condition_coverage\test_app_whitebox.py                    14      6    57%   6-9, 12-13
+ \mr449\tests\whitebox\data_flow\__init__.py                                       0      0   100%
+ \mr449\tests\whitebox\data_flow\test_models_whitebox.py                          22      0   100%
+ \mr449\tests\whitebox\loop_testing\__init__.py                                    0      0   100%
+ \mr449\tests\whitebox\loop_testing\test_app_whitebox.py                          16      4    75%   6-9
+ \mr449\tests\whitebox\statement_coverage\__init__.py                              0      0   100%
+ \mr449\tests\whitebox\statement_coverage\test_app_whitebox.py                    27      6    78%   7-10, 13-14
+Project-Management-Tool-ayobami-s-branch\project_tool\__init__.py                             
+                                     0      0   100%
+Project-Management-Tool-ayobami-s-branch\project_tool\app.py                                  
+                                   175     18    90%   31, 63, 135, 141, 147, 153, 159, 190, 222-223, 225-226, 228-229, 231-232, 234-235
+Project-Management-Tool-ayobami-s-branch\project_tool\core.py                                 
+                                    86      0   100%
+Project-Management-Tool-ayobami-s-branch\project_tool\deletion.py                             
+                                    44      1    98%   23
+Project-Management-Tool-ayobami-s-branch\project_tool\models.py                               
+                                    36      0   100%
+Project-Management-Tool-ayobami-s-branch\project_tool\persistence.py                          
+                                    75     12    84%   78-79, 113-125
+Project-Management-Tool-ayobami-s-branch\project_tool\responses.py                            
+                                    18      0   100%
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                         
+                                  1411     84    94%
